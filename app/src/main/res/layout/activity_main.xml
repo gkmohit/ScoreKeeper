@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/scoreTextTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/score"
+                />
+
+            <TextView
+                android:id="@+id/scoreTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scoreTextTeamA"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0"
+                android:textSize="@dimen/large_text_size"
+                />
+
+            <TextView
+                android:id="@+id/foulsTextTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scoreTeamA"
+                android:layout_centerHorizontal="true"
+                android:text="@string/fouls"/>
+
+            <TextView
+                android:id="@+id/foulsTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/foulsTextTeamA"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0"
+                android:textSize="@dimen/large_text_size"
+                />
+
+            <TextView
+                android:id="@+id/offsideTextTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foulsTeamA"
+                android:layout_centerHorizontal="true"
+                android:text="@string/off_sides"/>
+
+            <TextView
+                android:id="@+id/offSideTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offsideTextTeamA"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0"
+                android:textSize="@dimen/large_text_size"
+                />
+
+            <Button
+                android:id="@+id/teamAGoalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offSideTeamA"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimary"
+                android:text="@string/goal"
+                android:textColor="@color/colorAccent"/>
+
+            <Button
+                android:id="@+id/teamAFoulButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teamAGoalButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimary"
+                android:text="@string/off_sides"
+                android:textColor="@color/colorAccent"/>
+
+            <Button
+                android:id="@+id/teamAOffsideButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teamAFoulButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimary"
+                android:text="@string/foul"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/scoreTextTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/score"
+                />
+
+            <TextView
+                android:id="@+id/scoreTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scoreTextTeamB"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0"
+                android:textSize="@dimen/large_text_size"
+                />
+
+            <TextView
+                android:id="@+id/foulsTextTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scoreTeamB"
+                android:layout_centerHorizontal="true"
+                android:text="@string/fouls"/>
+
+            <TextView
+                android:id="@+id/foulsTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/foulsTextTeamB"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0"
+                android:textSize="@dimen/large_text_size"
+                />
+
+            <TextView
+                android:id="@+id/offsideTextTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foulsTeamB"
+                android:layout_centerHorizontal="true"
+                android:text="@string/off_sides"/>
+
+            <TextView
+                android:id="@+id/offSideTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offsideTextTeamB"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0"
+                android:textSize="@dimen/large_text_size"
+                />
+
+            <Button
+                android:id="@+id/teamBGoalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offSideTeamB"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimary"
+                android:text="@string/goal"
+                android:textColor="@color/colorAccent"/>
+
+            <Button
+                android:id="@+id/teamBFoulButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teamBGoalButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimary"
+                android:text="@string/off_sides"
+                android:textColor="@color/colorAccent"/>
+
+            <Button
+                android:id="@+id/teamBOffsideButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teamBFoulButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimary"
+                android:text="@string/foul"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:text="@string/reset_scores"/>
+</RelativeLayout>
